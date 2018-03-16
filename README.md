@@ -1,14 +1,14 @@
-Sam.js - Seriously Awesome Modules
+# Sam.js - Seriously Awesome Modules
 
 
 # Cookie Toaster - Makes tasty cookies for React.
 
-## installation
+### installation
 ```sh
 yarn add cookie_toaster
 ```
 
-## use
+### use
 In your root component:
 ```js
 import {CookieToaster} from 'cookie_toaster'
@@ -43,12 +43,12 @@ To modify the css you can use the following structure:
 }
 ```
 
-## components
+### components
 - CookieToaster
 - CookieToasterTop
 - CookieToasterModal
 
-## props
+### props
 - title: String, title (duh)
 - text: String, content
 - btnAcceptText: String, button label
@@ -59,5 +59,5 @@ To modify the css you can use the following structure:
 - linkUrl: String, a url
 - linkText: String, the text to display for the link
 
-## localStorage
+### localStorage
  - cookieHasPopped: cookie has been shown

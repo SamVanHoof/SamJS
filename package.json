@@ -1,15 +1,19 @@
 {
   "name": "samjs-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
     "clean-dist": "rm -rf ./dist",
     "build": "yarn run clean-dist && NODE_ENV=production `yarn bin`/babel ./src --out-dir ./dist"
   },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SamVanHoof/SamJS.git"
+  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
   "peerDependencies": {
     "react": "^15.x",
     "styled-jsx": "^1.x"

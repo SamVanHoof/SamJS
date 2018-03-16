@@ -1,7 +1,7 @@
 # Sam.js - Seriously Awesome Modules
 
 
-# Cookie Toaster - Makes tasty cookies for React.
+## Cookie Toaster - Makes tasty cookies for React.
 
 ### installation
 ```sh

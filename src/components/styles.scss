@@ -23,6 +23,7 @@
 }
 
 .pop-over-effect .cookie-toaster-top {
+  margin-bottom: 0;
   margin-top: -500px;
 }
 
@@ -50,6 +51,7 @@
 
 .cookie-toaster-top {
   top: 0;
+  bottom: auto;
   margin-bottom: 0;
   margin-top: -500px;
 }
@@ -71,5 +73,3 @@
     margin: 0 auto;
   }
 }
-
-

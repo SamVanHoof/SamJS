@@ -1,17 +1,16 @@
 # Sam.js - Seriously Awesome Modules
 
-
-## Cookie Toaster - Makes tasty cookies for React.
-
 ### installation
 ```sh
-yarn add cookie_toaster
+yarn add samjs-components
 ```
+
+## Cookie Toaster - Makes tasty cookies for React.
 
 ### use
 In your root component:
 ```js
-import {CookieToaster} from 'cookie_toaster'
+import {CookieToaster} from 'samjs-components'
 ...
 <CookieToaster />
 ...
@@ -58,6 +57,7 @@ To modify the css you can use the following structure:
 - popped: Boolean, set this property in your localstorage to track if cookie has been shown for the user
 - linkUrl: String, a url
 - linkText: String, the text to display for the link
+- type: 'top', 'bottom', or 'modal'
 
 ### localStorage
  - cookieHasPopped: cookie has been shown

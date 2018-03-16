@@ -10,11 +10,15 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _CookieContent = require('../cookieContent/CookieContent');
 
 var _CookieContent2 = _interopRequireDefault(_CookieContent);
 
-require('./styles.css');
+require('../styles.css');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -96,16 +100,16 @@ var CookieToaster = function (_React$Component) {
 }(_react2.default.Component);
 
 CookieToaster.propTypes = {
-  title: _react.PropTypes.string,
-  text: _react.PropTypes.string,
-  btnDeclineText: _react.PropTypes.string,
-  btnAcceptText: _react.PropTypes.string,
-  accept: _react.PropTypes.func,
-  decline: _react.PropTypes.func,
-  popped: _react.PropTypes.bool,
-  linkUrl: _react.PropTypes.string,
-  linkText: _react.PropTypes.string,
-  type: _react.PropTypes.string
+  title: _propTypes2.default.string,
+  text: _propTypes2.default.string,
+  btnDeclineText: _propTypes2.default.string,
+  btnAcceptText: _propTypes2.default.string,
+  accept: _propTypes2.default.func,
+  decline: _propTypes2.default.func,
+  popped: _propTypes2.default.bool,
+  linkUrl: _propTypes2.default.string,
+  linkText: _propTypes2.default.string,
+  type: _propTypes2.default.string
 };
 
 CookieToaster.defaultProps = {

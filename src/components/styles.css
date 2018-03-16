@@ -1,0 +1,26 @@
+.pop-over-show.pop-over-effect .cookie-toaster {
+  transition: all 1s;
+  opacity: 1;
+  margin-bottom: 0px; }
+
+.pop-over-effect .cookie-toaster {
+  transition: all 1s;
+  opacity: 0;
+  margin-bottom: -500px; }
+
+.cookie-toaster {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(200, 200, 200, 0.7);
+  margin-bottom: -500px;
+  opacity: 0; }
+  .cookie-toaster.hidden {
+    display: none; }
+  .cookie-toaster .cookie-container {
+    padding: 25px; }
+  .cookie-toaster button {
+    padding: 5px 1px;
+    margin: 25px 10px; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,7 @@
-import React, { PropTypes } from 'react';
+import React  from 'react';
+import PropTypes from 'prop-types';
 import CookieContent from '../cookieContent/CookieContent';
-import './styles.css';
+import '../styles.css';
 
 class CookieToaster extends React.Component {
   state = { hidden: true };

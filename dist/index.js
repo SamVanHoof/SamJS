@@ -5,10 +5,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.CookieToaster = undefined;
 
-var _cookieToaster = require('./components/cookieToaster');
+var _CookieToaster2 = require('./components/cookieToaster/CookieToaster');
 
-var _cookieToaster2 = _interopRequireDefault(_cookieToaster);
+var _CookieToaster3 = _interopRequireDefault(_CookieToaster2);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.CookieToaster = _cookieToaster2.default;
+exports.CookieToaster = _CookieToaster3.default;

@@ -1,1 +1,1 @@
-export CookieToaster from './components/cookieToaster';
+export CookieToaster from './components/cookieToaster/CookieToaster';

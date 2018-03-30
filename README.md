@@ -10,7 +10,7 @@ yarn add samjs-components
 ### use
 In your root component:
 ```js
-import {CookieToaster} from 'samjs-components'
+import { CookieToaster } from 'samjs-components'
 ...
 <CookieToaster />
 ...
@@ -61,3 +61,39 @@ To modify the css you can use the following structure:
 
 ### localStorage
  - cookieHasPopped: cookie has been shown
+
+
+## NetworkUtils (by Anton) - ALPHA - Handles your Fetch calls like a boss.
+
+### use
+In your root component:
+```js
+import { NetworkUtils } from 'samjs-components'
+...
+NetworkUtils.get(myRoute, myExtraHeaders).then(() => {
+  //Do awesome stuff
+});
+...
+```
+### params
+- route: API endpoint (e.g.: 'users/login')
+- extraHeaders: an array of headers you want to include
+- body: the body of your request
+
+### methods
+- get: route string, array of headers
+- post: route string, body, array of headers
+- put: route string, body, array of headers
+- delete: route string
+
+### session handling for OAuth
+You should have your OAuth token available in localStorage with the key 'session'.
+ ```js
+...
+localStorage.setItem('session', '<myToken>');
+...
+```
+
+### define your API host
+Set your API host in your env file as 'REACT_APP_API_HOST'.
+This enables you to easily switch between environements without having to change any params for the NetworkUtils module.

@@ -1,24 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-class CookieContent extends React.Component {
-
-  render() {
-    return (
-      <div className="cookie-container">
-        <h1>{this.props.title}</h1>
-        <p>{this.props.text}</p>
-        <a href={this.props.linkUrl}>{this.props.linkText}</a>
-        {
-          this.props.linkUrl && this.props.linkText &&
-          <div>
-            <button onClick={() => this.props.hide(false)}>{this.props.btnDeclineText}</button>
-            <button onClick={() => this.props.hide(true)}>{this.props.btnAcceptText}</button>
-          </div>
-        }
-      </div>
-    );
-  }
+const CookieContent = (props) => {
+  return (
+    <div className="cookie-container">
+      <h1>{props.title}</h1>
+      <p>{props.text}</p>
+      <a href={props.linkUrl}>{props.linkText}</a>
+      {
+        props.linkUrl && props.linkText &&
+        <div>
+          <button onClick={() => props.hide(false)}>{props.btnDeclineText}</button>
+          <button onClick={() => props.hide(true)}>{props.btnAcceptText}</button>
+        </div>
+      }
+    </div>
+  );
 }
 
 CookieContent.propTypes = {
@@ -31,7 +28,7 @@ CookieContent.propTypes = {
   linkText: PropTypes.string,
 };
 
-CookieContent.dfaultProps = {
+CookieContent.defaultProps = {
   linkUrl: '',
   linkText: '',
 };
